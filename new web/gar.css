@@ -1,0 +1,429 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 10px;
+    margin-top: 10px;
+    color: #000000;
+    background:  #b5c9b9;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #c5c7c5;
+}
+
+header, .parallax {
+    background: url('https://mrwallpaper.com/images/hd/black-and-white-hd-flower-garden-v4607jju7bjtgac4.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header-content {
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-family: 'Bodoni Moda', serif;
+}
+
+nav {
+    background:  #b5c9b9;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    height: 70px;
+   
+}
+
+nav .container {
+    display: flex;
+    color: #e9dbb7;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo image {
+    font-size: 24px;
+    border-radius: 10px;
+
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin: 0 10px;
+}
+
+nav .nav-links a {
+    color: #161111;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav .nav-links a:hover {
+    background: #ecf3ee;
+    border-radius: 5px;
+}
+
+#about, #services, #projects, #contact {
+    padding: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #000000;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.info-box,  .project-box {
+    text-align: center;
+    padding: 20px;
+    background: #fffcfc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.service-box{
+    font-family: Arial, sans-serif;
+    color: #000000;
+    padding: 0px;
+    box-shadow: 0 0 0px rgba(87, 79, 79, 0.1);
+    background:  #ffffff;
+    border-radius: 100px;
+}
+.info-box:hover, .service-box:hover, .project-box:hover {
+    transform: scale(1.05);
+}
+
+.info-box .icon, .service-box .icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #3deb60;
+}
+
+.project-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact input, #contact select, #contact textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #352e2e;
+    border-radius: 5px;
+}
+
+#contact button {
+    align-self: flex-start;
+}
+
+footer {
+    font-family: Arial, sans-serif;
+    background-color: #b5c9b9;
+    color: #000000;
+    padding: 20px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-column  {
+    max-width: 200px;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #000000;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+  
+
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #000000;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.social-links a:hover {
+    color: #ff7f50;
+}
+
+
+.parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+@media (max-width: 400px) {
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+
+    nav .container {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    nav .logo img {
+        width: 80px; 
+    }
+
+    nav .nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    nav .nav-links li {
+        margin: 10px 0;
+    }
+
+    header .header-content {
+        padding: 10px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-box, .info-box, .project-box {
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    #contact form {
+        padding: 10px;
+    }
+
+    #contact input, #contact select, #contact textarea {
+        padding: 8px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+
+    .social-links {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 401px) {
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    nav .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav .logo img {
+        width: 100px; /* Adjust logo size for larger screens */
+    }
+
+    nav .nav-links {
+        flex-direction: row;
+        width: auto;
+        text-align: center;
+    }
+
+    nav .nav-links li {
+        margin: 0 10px;
+    }
+
+    header .header-content {
+        padding: 20px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .service-box, .info-box, .project-box {
+        padding: 0px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #contact form {
+        padding: 20px;
+    }
+
+    #contact input, #contact select, #contact textarea {
+        padding: 10px;
+    }
+
+    footer {
+        text-align: left;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer-column {
+        margin-bottom: 0;
+    }
+
+    .social-links {
+        margin-top: 0;
+    }
+}
+@media (min-width: 401px) {
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    nav {
+        height: 70px; /* Adjust height for larger screens */
+        padding: 10px 0;
+    }
+
+    nav .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav .logo img {
+        width: 100px; /* Adjust logo size for larger screens */
+    }
+
+    nav .nav-links {
+        flex-direction: row;
+        width: auto;
+        text-align: center;
+    }
+
+    nav .nav-links li {
+        margin: 0 10px;
+    }
+
+    nav .nav-links a {
+        color: #161111;
+        text-decoration: none;
+        padding: 5px 10px;
+    }
+
+    header {
+        height: 100vh; /* Full height for larger screens */
+    }
+
+    header .header-content {
+        padding: 20px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .service-box, .info-box, .project-box {
+        padding: 0px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #contact form {
+        padding: 20px;
+    }
+
+    #contact input, #contact select, #contact textarea {
+        padding: 10px;
+    }
+
+    footer {
+        text-align: left;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer-column {
+        margin-bottom: 0;
+    }
+
+    .social-links {
+        margin-top: 0;
+    }
+}
